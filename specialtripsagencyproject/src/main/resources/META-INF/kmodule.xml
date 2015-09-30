@@ -6,5 +6,4 @@
       </workItemHandlers>
     </ksession>
   </kbase>
-  <kbase name="defaultKieBase" default="false" eventProcessingMode="stream" equalsBehavior="identity"/>
 </kmodule>
