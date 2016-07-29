@@ -1,6 +1,6 @@
-Repository Init Content
+JBoss BPMSuite Travel Agency Demo repository
 =======================
 
-This is still work in progress. Please get in touch with npatel@redhat.com if you need more info on this.
+This is the source repository of the JBoss BPMSuite Travel Agency demo. For the full demo project, including the platform setup and configuration, please refer to: http://www.github.com/jbossdemocentral/bpms-travel-agency-demo 
 
-changes by shepherd
+
