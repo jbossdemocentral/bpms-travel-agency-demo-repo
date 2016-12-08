@@ -1214,7 +1214,7 @@ System.out.println("Leaving [" + kcontext.getNodeInstance().getNodeName() +"] No
         </drools:metaData>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_5D118F3F-5031-4EB9-B76C-FEF43A48D1FB</bpmn2:incoming>
-      <bpmn2:cancelEventDefinition id="_0v6TXlsnEeaIg7vKOCJn6w"/>
+      <bpmn2:terminateEventDefinition id="_0v6TXlsnEeaIg7vKOCJn6w"/>
     </bpmn2:endEvent>
     <bpmn2:sequenceFlow id="_D87B3F90-CCBA-4424-9AFD-034336A728BE" drools:selectable="true" drools:priority="1" color:background-color="#000000" color:border-color="#000000" color:color="#000000" name="Not rejected" sourceRef="_DF8304DF-C347-4477-B1D5-6856A7A973D3" targetRef="_5A40487E-1C39-4058-B706-C9417FD75544">
       <bpmn2:extensionElements>
