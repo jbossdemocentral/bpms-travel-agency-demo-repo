@@ -8,6 +8,23 @@
   <packaging>kjar</packaging>
   <name>specialtripsagencyproject</name>
   <description>My specialtrips agency Project</description>
+  <properties>
+    <version.org.kie>6.5.0.Final-redhat-2</version.org.kie>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>${version.org.kie}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>special-trips</groupId>
+      <artifactId>acmeDataModel</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
@@ -20,9 +37,18 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.4.0.Final-redhat-3</version>
+        <version>${version.org.kie}</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
   </build>
+  <profiles>
+    <profile>
+      <id>openshift</id>
+      <properties>
+        <version.org.kie>6.4.0.Final-redhat-3</version.org.kie>
+      </properties>
+    </profile>
+  </profiles>
+
 </project>
