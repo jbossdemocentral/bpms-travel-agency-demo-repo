@@ -8,13 +8,32 @@
   <packaging>kjar</packaging>
   <name>specialtripsagencyproject</name>
   <description>My specialtrips agency Project</description>
+    
+
+
+
+  <dependencies>
+  <!-- add this dependency if there are Model Classes present (created by Data Modeler in the business-central) -->
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>6.4.0.Final-redhat-3</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+    
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
       <name>Guvnor M2 Repo</name>
       <url>http://localhost:8080/business-central/maven2/</url>
     </repository>
-  </repositories>
+    <repository>
+      <id>central</id>
+      <name>your custom repo</name>
+      <url>https://maven.repository.redhat.com/ga</url>
+    </repository>
+</repositories>
   <build>
     <plugins>
       <plugin>
